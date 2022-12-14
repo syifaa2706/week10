@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        .list{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <select onchange="gantigambar()" name="listgambaer" id="listgambar" class="list">
+        <option value="https://www.pennlive.com/resizer/QttpY8SJrC4Fau1YWw5DNc0RCX8=/arc-anglerfish-arc2-prod-advancelocal/public/3X7VRITQBNFFZFG3XDUH5P2TSU.jpg"></Gorila>gorila</option>
+        <option value="https://p4.wallpaperbetter.com/wallpaper/1/113/75/dolphins-ocean-sea-underwater-wallpaper-preview.jpg">lumba-lumba</option>
+        <option value="http://1.bp.blogspot.com/-XWsDNlWsyP8/TwmH_INnGbI/AAAAAAAAAPk/Vb0UZFGQnCw/s1600/Butterfly_on_Purple_Flowers_HD_Nature_Wallpaper-Vvallpaper.Net.jpg">kupu-kupu</option>
+        </select>
+    </center>
+    <br/>
+    <img style="width: 300px;" src="https://c4.wallpaperflare.com/wallpaper/21/350/403/desktop-background-picture-nature-1920x1080-wallpaper-preview.jpg" alt="" id="gambar">
+<script>
+    function gantigambar() {
+        let gambar = document.getElementById("listgambar").value;
+        document.getElementById("gambar").src = gambar;
+    }
+</script>
+</body>
+</html>
